@@ -30,7 +30,7 @@ In contrast, this **trillion-base encryption** method involves **16 hash algorit
 Additionally, this program allows users to provide a custom password as the initial input, further enhancing security. Users can also customize the numerical base; the higher the value, the longer the encryption time. A regular computer can complete trillion-base encryption within minutes, making it even more complex and unpredictable than Bitcoin private keys and mnemonics.
 
 ### Adjusting the Script
-For stronger encryption, modify the following parameters in the script: (1-1,000,000) and (1 <= args.n <= 1,000,000). The higher the value, the slower the encryption; adjust according to actual needs.
+For stronger encryption, modify the following parameters in the script: (1, 1000000) and (1 <= args.n <= 1,000,000). The higher the value, the slower the encryption; adjust according to actual needs.
 
 ```python
 if args.R:
@@ -43,6 +43,7 @@ else:
         sys.exit(1)
     iterations_per_algo = {algo: args.n for algo in algorithms}
 ```
+
 
 ## Supported Hash Algorithms
 This script supports the following 16 hash algorithms:
