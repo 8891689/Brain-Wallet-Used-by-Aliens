@@ -100,12 +100,12 @@ pip install blake3 xxhash
 
 ### 1. Random Iteration Encryption (Each algorithm encrypts randomly between 1-100,000,000 times)
 ```sh
-python script.py -R -p your_password
+python hash_script.py -R -p your_password
 ```
 
 ### 2. Fixed Iteration Encryption (Each algorithm executes a specified number of times, between 1-100,000,000)
 ```sh
-python script.py -n 5000000 -p your_password
+python hash_script.py -n 5000000 -p your_password
 ```
 ```sh
 Example
