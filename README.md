@@ -135,7 +135,13 @@ SHA-256: 722568 times
 
 Use the generated result and paste it into `validate_hash.py`, 
 
-counts_data = """The results obtained from the above calculations here are consistent with the correctness of the data. """
+
+.# Define the raw data for hash algorithm usage counts
+
+counts_data = """
+The results obtained from the above calculations here are consistent with the correctness of the data. 
+
+"""
 
 ```sh
 .# Define the raw data for hash algorithm usage counts
