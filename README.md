@@ -129,14 +129,14 @@ BLAKE3: 478358 times
 xxHash64: 23614 times
 xxHash128: 137938 times
 SHA-256: 722568 times
-
+```
 
 ## Verification Script `validate_hash.py`
 
-Use the generated result and paste it into `validate_hash.py`, then run:
-```sh
-python3 validate_hash.py -p your_password -e <encrypted_result>
-```
+Use the generated result and paste it into `validate_hash.py`, 
+
+counts_data = """The results obtained from the above calculations here are consistent with the correctness of the data. """
+
 ```sh
 .# Define the raw data for hash algorithm usage counts
 counts_data = """
@@ -157,9 +157,11 @@ xxHash64: 23614 times
 xxHash128: 137938 times
 SHA-256: 722568 times
 """
+```
 
 Example
 
+```sh
 python3 validate_hash.py -p your_password -e cbeb88d35755124cadeac0edac3e492a6a8fbfeb20477a9a4a311d6ae2249d3b
 
 Final hashed data (hexadecimal):
@@ -182,7 +184,7 @@ BLAKE3: 478358 times
 xxHash64: 23614 times
 xxHash128: 137938 times
 SHA-256: 722568 times
-
+```
 Validation successful: Final hash matches the expected value.
 
 
