@@ -44,9 +44,8 @@ else:
     iterations_per_algo = {algo: args.n for algo in algorithms}
 ```
 
-
 ## Supported Hash Algorithms
-This script supports the following 16 hash algorithms:
+The script uses 16 irreversible chain algorithms:
 
 1. SHA-224
 2. SHA-384
@@ -64,6 +63,11 @@ This script supports the following 16 hash algorithms:
 14. xxHash64 (requires `xxhash` library)
 15. xxHash128 (requires `xxhash` library)
 16. SHA-256 (ensuring at least one standard hash value)
+
+
+（1-100000000） + （1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）+（1-100000000）= Final Hash
+
+1. SHA-224 + 2. SHA-384 + 3. SHA-512 + 4. SHA3-224 + 5. SHA3-256 + 6. SHA3-384 + 7. SHA3-512 + 8. SHAKE128 + 9. SHAKE256 + 10. BLAKE2b + 11. BLAKE2s + 12. RIPEMD160 + 13. BLAKE3 + 14. xxHash64 + 15. xxHash128  + 16. SHA-256 = Final Hash
 
 ## Setting Up a Virtual Environment
 It is recommended to use a virtual environment to manage dependencies and avoid conflicts with other projects.
